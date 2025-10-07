@@ -606,7 +606,7 @@ const LeaveManagementSystem = () => {
             <h2 className="text-2xl font-bold text-gray-800">Welcome, {currentUser.name}</h2>
             <p className="text-gray-600">
               {currentUser.role.toUpperCase()} | {currentUser.department}
-              {currentUser.role === 'student' && ` - Section ${currentUser.section}`}
+              {currentUser.role !== 'hod' && currentUser.section && ` - Section ${currentUser.section}`}
             </p>
           </div>
           <button
