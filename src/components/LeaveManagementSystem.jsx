@@ -304,7 +304,7 @@ const LeaveManagementSystem = () => {
             ))}
           </select>
         </div>
-        {signupForm.role === 'student' && (
+        {signupForm.role !== 'hod' && (
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Section</label>
             <select
